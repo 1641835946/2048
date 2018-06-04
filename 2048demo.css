@@ -1,0 +1,88 @@
+#bg{
+    width: 520px;
+    height: 520px;
+    margin: auto auto;
+    border:5px solid #bbada0;
+    background: #bbada0;
+    border-radius: 10px;
+}
+
+.square{
+	display: inline-block;
+	float: left;
+	width: 120px;
+	height: 120px;
+	margin: 5px;
+	border-radius: 5px;
+	text-align: center;
+	line-height: 120px;
+	font-size: 30px;
+}
+
+/*.slideLeft{
+	transform:translate(-100px, 0px);
+	transition: all 0.3s;
+}*/
+
+
+.appear{
+}
+
+.emphasize{
+	transform: scale(1.05);
+	transition: all 0.1s;
+}
+
+.shrink{
+	transform: scale(1);
+	transition: all 0.1s;
+}
+
+.num0{
+	background: #ccc0b3;
+}
+
+.num2{
+	background: #eee4da;
+}
+
+.num4{
+	background: #ede0c8;
+}
+
+.num8{
+	background: #f2b179;
+}
+
+.num16{
+	background: #f59563;
+}
+
+.num32{
+	background: #f67c5f;
+}
+
+.num64{
+	background: #f65e3b;
+}
+
+.num128{
+	background: #edcf72;
+}
+
+.num256{
+	background: #edcc61;
+}
+
+.num512{
+	background: #9c0;
+}
+
+.num1024{
+	background: #33b5e5;
+}
+
+.num2048{
+	background: #09c;
+}
+
