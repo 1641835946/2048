@@ -1,7 +1,9 @@
-<!-- http://www.jb51.net/article/82385.htmhttp://www.jb51.net/article/82385.htm
-http://www.jb51.net/article/64975.htmhttp://www.jb51.net/article/64975.htm
-http://www.blueidea.com/tech/web/2009/7018.asphttp://www.blueidea.com/tech/web/2009/7018.asp
-http://www.2cto.com/kf/201403/288720.html -->
+<!-- 网上示例
+俄罗斯方块：http://www.jb51.net/article/64975.htm
+贪吃蛇：http://www.blueidea.com/tech/web/2009/7018.asp
+http://www.2cto.com/kf/201403/288720.html
+http://www.jb51.net/article/82385.htm
+2048：http://www.jb51.net/article/102222.htm -->
 
 <!DOCTYPE html>
 <html>
@@ -12,31 +14,16 @@ http://www.2cto.com/kf/201403/288720.html -->
 		<link rel="stylesheet" type="text/css" href="2048demo.css" />
 	</head>
 	<body>
+		<div id="menu">
+			<div id="awardScore" class="menu_item"></div>
+			<div id="title">经典2048</div>
+			<div id="score" class="menu_item">
+				<div id="hint">得分</div>
+				<div id="scoreText"></div>
+			</div>
+			<div id="restart" class="menu_item" onclick="initial()">新游戏</div>
+		</div>
 		<div id="bg">
-			<!-- <div id="i0">
-				<div id="i0j0" class="square"></div>
-				<div id="i0j1" class="square"></div>
-				<div id="i0j2" class="square"></div>
-				<div id="i0j3" class="square"></div>
-			</div>
-			<div id="i1">
-				<div id="i1j0" class="square"></div>
-				<div id="i1j1" class="square"></div>
-				<div id="i1j2" class="square"></div>
-				<div id="i1j3" class="square"></div>
-			</div>
-			<div id="i2">
-				<div id="i2j0" class="square"></div>
-				<div id="i2j1" class="square"></div>
-				<div id="i2j2" class="square"></div>
-				<div id="i2j3" class="square"></div>
-			</div>
-			<div id="i3">
-				<div id="i3j0" class="square"></div>
-				<div id="i3j1" class="square"></div>
-				<div id="i3j2" class="square"></div>
-				<div id="i3j3" class="square"></div>
-			</div> -->
 		</div>
 	</body>
 </html>
