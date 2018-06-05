@@ -61,10 +61,13 @@ document.onkeydown=function(){
       return;
   }
   // window.setTimeout("awardAnimate()", 200);
-  awardAnimate();
-  randomNum();
-  isFull();
   show();
+  awardAnimate();
+  window.setTimeout(function(){
+    randomNum();
+    isFull();
+    show();
+  }, 200);
   // window.setTimeout("isFull()",600);
 }
 
@@ -217,8 +220,10 @@ var removeEmphasize=function(i, j){
 }
 var appear=function(i, j){
   //随机出现方块的动画
-  // $("#i"+i+"j"+j).addClass("appear");
-  // $("#i"+i+"j"+j).removeClass("appear");
+  $("#i"+i+"j"+j).addClass("appear");
+  window.setTimeout(function(){
+    $("#i"+i+"j"+j).removeClass("appear");
+  }, 200);
 }
 var removeSquBg=function(i, j){
   $("#i"+i+"j"+j).removeClass("num"+panelContent[i][j]);

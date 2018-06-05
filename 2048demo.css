@@ -69,6 +69,15 @@
 	transition: all 0.3s;
 }*/
 
+#awardScore{
+	width: 60px;
+	height: 50px;
+	margin-left: 5px;
+	font-size: 20px;
+	color: #9e836a;
+	background: white;
+}
+
 @-webkit-keyframes awarded {
     0% {
         opacity: 0;
@@ -81,15 +90,6 @@
     }
 }
 
-#awardScore{
-	width: 60px;
-	height: 50px;
-	margin-left: 5px;
-	font-size: 20px;
-	color: #9e836a;
-	background: white;
-}
-
 .awardAnimate{
 	-webkit-animation-name: awarded;
     -webkit-animation-duration: 0.4s;
@@ -97,8 +97,26 @@
     -webkit-animation-direction: alternate;
 }
 
+@-webkit-keyframes myAppear {
+    0% {
+        opacity: 0.5;
+        transform: scale(0.5);
+    }
+    100% {
+        opacity: 1;   
+    	transform: scale(1);
+    }
+}
+
+.appear{
+	-webkit-animation-name: myAppear;
+    -webkit-animation-duration: 0.2s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-direction: alternate;
+}
+
 .emphasize{
-	transform: scale(1.05);
+	transform: scale(1.2);
 	transition: all 0.1s;
 }
 
